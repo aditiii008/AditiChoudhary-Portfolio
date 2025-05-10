@@ -4,11 +4,11 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen flex items-center justify-center py-20 bg-[rgba(250,240,242,0.8)] text-[#4B4B4B]"
+      className="min-h-screen flex items-center justify-center py-20 bg-[rgba(0,0,0,0.8)] text-[#4B4B4B]"
     >
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-[#2C3E50] text-center">
+          <h2 className="text-3xl font-bold mb-8 text-[#c58c8c] text-center">
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -42,13 +42,13 @@ export const Projects = () => {
                 key={index}
                 className="p-6 rounded-xl bg-[#FAD1D1]/10 border border-[#4c4b4b] hover:border-[#eea7a7] hover:shadow-lg transition-all hover:-translate-y-1"
               >
-                <h3 className="text-xl font-bold mb-2 text-[#2C3E50]">{project.title}</h3>
-                <p className="text-[#4B4B4B] mb-4">{project.desc}</p>
+                <h3 className="text-xl font-bold mb-2 text-[#c58c8c]">{project.title}</h3>
+                <p className="text-[#e9dddd] mb-4">{project.desc}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="bg-[#FAD1D1]/10 text-[#a06b6b] py-1 px-3 rounded-full text-sm hover:bg-[#FAD1D1]/20 hover:shadow-[0_2px_8px_rgba(250,209,209,0.3)] transition"
+                      className="bg-[#FAD1D1]/10 text-[#e9dddd] py-1 px-3 rounded-full text-sm hover:bg-[#FAD1D1]/20 hover:shadow-[0_2px_8px_rgba(250,209,209,0.3)] transition"
                     >
                       {tech}
                     </span>

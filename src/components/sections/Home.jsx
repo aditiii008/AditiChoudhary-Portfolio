@@ -4,7 +4,7 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative bg-[rgba(250,240,242,0.8)] text-[#4B4B4B]"
+      className="min-h-screen flex items-center justify-center relative bg-[rgba(0,0,0,0.8)] text-[#4B4B4B]"
     >
       <RevealOnScroll>
         <div className="text-center z-10 px-4">

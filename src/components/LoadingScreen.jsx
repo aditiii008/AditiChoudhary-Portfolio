@@ -22,10 +22,10 @@ export const LoadingScreen = ({ onComplete }) => {
   }, [onComplete]);
 
   return (
-    <div className="fixed inset-0 z-50 bg-[#F9F7F2] text-[#4B4B4B] flex flex-col items-center justify-center overflow-hidden">
+    <div className="fixed inset-0 z-50 bg-[#010101] text-[#d9bbbb] flex flex-col items-center justify-center overflow-hidden">
       {/* Floating background blobs */}
       <div className="absolute w-full h-full -z-10">
-        <div className="absolute top-10 left-20 w-40 h-40 bg-[#FAD1D1] rounded-full opacity-30 animate-float blur-2xl" />
+        <div className="absolute top-10 left-20 w-40 h-40 bg-[#f3dbdb] rounded-full opacity-30 animate-float blur-2xl" />
         <div className="absolute bottom-20 right-10 w-32 h-32 bg-[#F2D0A4] rounded-full opacity-20 animate-float2 blur-xl" />
         <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-[#D1C7E0] rounded-full opacity-25 animate-float3 blur-2xl" />
       </div>

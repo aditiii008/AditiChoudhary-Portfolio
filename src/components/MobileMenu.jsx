@@ -12,7 +12,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
     >
       <button
         onClick={() => setMenuOpen(false)}
-        className="absolute top-6 right-6 text-[#2C3E50] text-4xl focus:outline-none cursor-pointer hover:text-[#a35e6c]"
+        className="absolute top-6 right-6 text-[#c58c8c] text-4xl focus:outline-none cursor-pointer hover:text-[#a35e6c]"
         aria-label="Close Menu"
       >
         &times;
@@ -23,7 +23,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
           key={section}
           href={`#${section}`}
           onClick={() => setMenuOpen(false)}
-          className={`text-2xl font-semibold text-[#2C3E50] my-4 transform transition-transform duration-300
+          className={`text-2xl font-semibold text-[#7f4d4d] my-4 transform transition-transform duration-300
                       ${
                         menuOpen
                           ? "opacity-100 translate-y-0"
