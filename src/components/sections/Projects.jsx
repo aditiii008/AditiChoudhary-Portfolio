@@ -16,23 +16,23 @@ export const Projects = () => {
               {
                 title: "Todo-List App",
                 desc:
-                  "Scalable cloud infrastructure management with real-time monitoring and automated scaling.",
+                  " A full-stack task management application built using the MERN stack (MongoDB, Express.js, React, Node.js). It features user-friendly interfaces and seamless CRUD functionality, demonstrating strong skills in both frontend and backend web development.",
                 tech: ["React", "Node.js", "Express", "MongoDB"],
               },
               {
                 title: "Portfolio Website",
                 desc:
-                  "ML-powered data visualization platform with predictive analytics and interactive reports.",
+                  " A personal portfolio built with React, Vite, and Tailwind CSS to showcase web development projects. It features a modern, responsive design with smooth navigation and clean UI to highlight skills and experience effectively.",
                 tech: ["Vite", "React", "Tailwind"],
               },
               {
                 title: "Social-Media Web App",
                 desc:
-                  "Full-stack e-commerce with modern UI, secure payment integration, and customizable product inventory.",
+                  " – A dynamic platform that enables users to create profiles, post content, like, comment, and connect with others. Built to replicate core social media functionality with an interactive and responsive user experience.",
                 tech: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
               },
               {
-                title: "Blog App",
+                title: "Real-Time Chat App",
                 desc:
                   "Scalable chat platform supporting real-time messaging, presence, and group chat features.",
                 tech: ["MongoDB", "Express", "React", "Node"],
