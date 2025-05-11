@@ -12,7 +12,7 @@ export const Home = () => {
             Hi, I'm Aditi Choudhary
           </h1>
 
-          <p className="text-[#4B4B4B] text-lg mb-8 max-w-lg mx-auto">
+          <p className="text-[#e9dddd] text-lg mb-8 max-w-lg mx-auto">
             I’m a full-stack developer who loves crafting clean, scalable web
             applications. My goal is to build solutions that offer both
             exceptional performance and a delightful user experience.
