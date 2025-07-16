@@ -35,7 +35,7 @@ export const Contact = () => {
     >
       <RevealOnScroll>
         <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#a06b6b] to-[#c58c8c] bg-clip-text text-transparent text-center">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#dad3d3] to-[#e0d5d5] bg-clip-text text-transparent text-center">
             Get In Touch
           </h2>
           <form className="space-y-6" onSubmit={handleSubmit}>
@@ -86,7 +86,7 @@ export const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-[#c58c8c] text-[#e9dddd] py-3 px-6 rounded font-medium transition-all hover:bg-[#F28D8D] hover:text-white hover:shadow-[0_0_15px_rgba(242,141,141,0.5)]"
+              className="w-full bg-[#c58c8c] text-white py-3 px-6 rounded font-medium transition-all hover:bg-[#F28D8D] hover:text-white hover:shadow-[0_0_15px_rgba(242,141,141,0.5)]"
             >
               Send Message
             </button>

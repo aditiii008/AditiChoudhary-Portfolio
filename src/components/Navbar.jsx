@@ -9,7 +9,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     <nav className="fixed top-0 w-full z-40 bg-[rgba(250,240,242,0.8)] backdrop-blur-lg border-b border-[#f2d0a4]/30 shadow-md">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <a href="#home" className="font-mono text-xl font-bold text-[#4B4B4B]">
+          <a href="#home" className="font-mono text-xl font-bold text-black">
             My<span className="text-[#925252]">Portfolio</span>
           </a>
           <div
@@ -18,28 +18,28 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           >
             &#9776;
           </div>
-          <div className="hidden md:flex items-center space-x-8">
+          <div className=" text-white hidden md:flex items-center space-x-8">
             <a
               href="#home"
-              className="text-[#2C3E50] hover:text-[#FAD1D1] transition-colors"
+              className="text-black hover:text-[#FAD1D1] transition-colors"
             >
               Home
             </a>
             <a
               href="#about"
-              className="text-[#2C3E50] hover:text-[#FAD1D1] transition-colors"
+              className="text-black hover:text-[#FAD1D1] transition-colors"
             >
               About
             </a>
             <a
               href="#projects"
-              className="text-[#2C3E50] hover:text-[#FAD1D1] transition-colors"
+              className="text-black hover:text-[#FAD1D1] transition-colors"
             >
               Projects
             </a>
             <a
               href="#contact"
-              className="text-[#2C3E50] hover:text-[#FAD1D1] transition-colors"
+              className="text-black hover:text-[#FAD1D1] transition-colors"
             >
               Contact
             </a>

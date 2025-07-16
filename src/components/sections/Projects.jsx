@@ -1,6 +1,30 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Projects = () => {
+  const projects = [
+    {
+      title: "Travel Planner App",
+      link: "https://travel-planner-theta-brown.vercel.app",
+      desc:
+        "A full-stack travel planning app built with Next.js and Google Maps API. Users can create and manage custom itineraries, visualize routes, and explore locations with real-time geolocation and map interaction.",
+      tech: ["Next.js", "Google Maps API", "Tailwind CSS", "TypeScript"],
+    },
+    {
+      title: "E-Commerce Store",
+      link: "https://skincare-app-delta.vercel.app",
+      desc:
+        "A modern e-commerce platform built using Next.js 15 and App Router. Features Stripe-powered checkout, responsive product pages, and a sleek UI built with Tailwind CSS and React Server Components.",
+      tech: ["Next.js 15", "Stripe", "Tailwind CSS", "TypeScript"],
+    },
+    {
+      title: "Portfolio Website",
+      link: "https://youtu.be/j7Qu65rUcsY",
+      desc:
+        "Personal developer portfolio designed with React and Tailwind CSS. Showcases projects and skills with smooth animations, a responsive layout, and an elegant modern design.",
+      tech: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
+    },
+  ];
+
   return (
     <section
       id="projects"
@@ -12,37 +36,21 @@ export const Projects = () => {
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              {
-                title: "Todo-List App",
-                desc:
-                  " A full-stack task management application built using the MERN stack (MongoDB, Express.js, React, Node.js). It features user-friendly interfaces and seamless CRUD functionality, demonstrating strong skills in both frontend and backend web development.",
-                tech: ["React", "Node.js", "Express", "MongoDB"],
-              },
-              {
-                title: "Portfolio Website",
-                desc:
-                  " A personal portfolio built with React, Vite, and Tailwind CSS to showcase web development projects. It features a modern, responsive design with smooth navigation and clean UI to highlight skills and experience effectively.",
-                tech: ["Vite", "React", "Tailwind"],
-              },
-              {
-                title: "Social-Media Web App",
-                desc:
-                  " – A dynamic platform that enables users to create profiles, post content, like, comment, and connect with others. Built to replicate core social media functionality with an interactive and responsive user experience.",
-                tech: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-              },
-              {
-                title: "Real-Time Chat App",
-                desc:
-                  "Scalable chat platform supporting real-time messaging, presence, and group chat features.",
-                tech: ["MongoDB", "Express", "React", "Node"],
-              },
-            ].map((project, index) => (
+            {projects.map((project, index) => (
               <div
                 key={index}
                 className="p-6 rounded-xl bg-[#FAD1D1]/10 border border-[#4c4b4b] hover:border-[#eea7a7] hover:shadow-lg transition-all hover:-translate-y-1"
               >
-                <h3 className="text-xl font-bold mb-2 text-[#c58c8c]">{project.title}</h3>
+                <h3 className="mb-2">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xl font-bold text-[#c58c8c] hover:text-[#f5aaaa] transition-colors"
+                  >
+                    {project.title}
+                  </a>
+                </h3>
                 <p className="text-[#e9dddd] mb-4">{project.desc}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
@@ -53,14 +61,6 @@ export const Projects = () => {
                       {tech}
                     </span>
                   ))}
-                </div>
-                <div className="flex justify-between items-center">
-                  <a
-                    href="#"
-                    className="text-[#6c5151] hover:text-[#f5aaaa] transition-colors my-4"
-                  >
-                    
-                  </a>
                 </div>
               </div>
             ))}

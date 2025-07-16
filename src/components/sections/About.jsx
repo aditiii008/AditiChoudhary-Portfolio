@@ -2,14 +2,22 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
   const frontendSkills = [
+    "Next.js",
     "React",
-    "Vue",
     "TypeScript",
-    "TailwindCSS",
-    "Svelte",
+    "Tailwind CSS",
+    "Vite",
+    "Google Maps API",
+    "Framer Motion",
   ];
 
-  const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
+  const backendSkills = [
+    "Node.js",
+    "Prisma",
+    "PostgreSQL",
+    "Stripe",
+    "Geolocation API",
+  ];
 
   return (
     <section
@@ -23,16 +31,18 @@ export const About = () => {
           </h2>
 
           <div className="rounded-xl p-8 border-[#FAD1D1]/80 border hover:shadow-lg transition-all hover:-translate-y-1">
-
-
             <p className="text-[#cdc6c6] mb-6">
-              Passionate developer with expertise in building scalable web
-              applications and creating innovative solutions.
+              Passionate full-stack developer with experience building modern
+              and scalable web applications. I specialize in frontend
+              development with React and Next.js and enjoy bringing ideas to
+              life with clean, responsive UI and integrated backend services.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-6 hover:shadow-lg transition-all hover:-translate-y-1">
-                <h3 className="text-xl font-bold mb-4 text-[#c58c8c]">Frontend</h3>
+                <h3 className="text-xl font-bold mb-4 text-[#c58c8c]">
+                  Frontend
+                </h3>
                 <div className="flex flex-wrap gap-2">
                   {frontendSkills.map((tech, key) => (
                     <span
@@ -46,7 +56,9 @@ export const About = () => {
               </div>
 
               <div className="rounded-xl p-6 hover:shadow-lg transition-all hover:-translate-y-1">
-                <h3 className="text-xl font-bold mb-4 text-[#c58c8c]">Backend</h3>
+                <h3 className="text-xl font-bold mb-4 text-[#c58c8c]">
+                  Backend
+                </h3>
                 <div className="flex flex-wrap gap-2">
                   {backendSkills.map((tech, key) => (
                     <span
@@ -62,38 +74,41 @@ export const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-           <div className="rounded-xl p-8 border-[#FAD1D1]/80 border hover:shadow-lg transition-all hover:-translate-y-1">
-              <h3 className="text-xl font-bold mb-4 text-[#c58c8c]"> 🏫 Education </h3>
+            <div className="rounded-xl p-8 border-[#FAD1D1]/80 border hover:shadow-lg transition-all hover:-translate-y-1">
+              <h3 className="text-xl font-bold mb-4 text-[#c58c8c]">
+                 Education
+              </h3>
               <ul className="list-disc list-inside text-[#f4f0f0] space-y-2">
                 <li>
-                  <strong className="text-[#c58c8c]"> B.Tech in Computer Science </strong> - Sir M.Visvesvaraya Institute of Technology
-                  (2022-2026)
+                  <strong className="text-[#c58c8c]">
+                    B.Tech in Computer Science
+                  </strong>{" "}
+                  - Sir M. Visvesvaraya Institute of Technology (2022–2026)
                 </li>
                 <li>
-                  <strong className="text-[#c58c8c]">Relevant Coursework:</strong> Data Structures, Web Development, Cloud
-                  Computing,Blockchain,Computer Networking.
+                  <strong className="text-[#c58c8c]">
+                    Relevant Coursework:
+                  </strong>{" "}
+                  Data Structures, Web Development, Cloud Computing,
+                  Blockchain, Computer Networking.
                 </li>
               </ul>
             </div>
+
             <div className="rounded-xl p-8 border-[#FAD1D1]/80 border hover:shadow-lg transition-all hover:-translate-y-1">
-              <h3 className="text-xl font-bold mb-4 text-[#c58c8c]"> 💼 Work Experience </h3>
+              <h3 className="text-xl font-bold mb-4 text-[#c58c8c]">
+                 Work Experience
+              </h3>
               <div className="space-y-4 text-[#f4eded]">
                 <div>
                   <h4 className="font-semibold text-[#c58c8c]">
-                    Created a Portfolio website, Social-Media Web App, Blog App, Todo-List App...
+                    Built and deployed Travel Planner, E-Commerce Store, and
+                    Portfolio Website
                   </h4>
                   <p>
-                    Developed and maintained microservices for cloud-based
-                    applications.
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-[#c58c8c]">
-                   
-                  </h4>
-                  <p>
-                   
+                    Designed and developed full-stack web apps using modern
+                    technologies like Next.js, Tailwind, Stripe, and PostgreSQL.
+                    Experience with geolocation APIs and serverless deployment.
                   </p>
                 </div>
               </div>
